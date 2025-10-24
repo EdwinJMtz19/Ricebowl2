@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    font-family: var(--font-body);
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--color-text-dark);
+    background-color: var(--color-white);
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/*Estilos del header*/
+.header{
+    background-color: rgb(180, 255, 253);
+    position: relative;
+    
+
+
+}
+
+.header-contenido{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: relative;
+
+    
+}
+
+.logo img {
+    max-width: 150px;
+
+
+}
+
+/*botones*/
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    border-radius: 25px;
+    font-weight: 700;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+
+}
+
+.btn-vermenu {
+    background-color: red;
+    color: var(--color-white);
+}
+
+.btn-calorias {
+    position: absolute;
+    background-color: purple;
+    color: white;
+    padding: 10px 20px;
+    bottom: 10px;
+    left: 45%;
+}
+
+
+
+/*Navegacion*/
+.navegacion ul {
+    display: flex;
+    gap: 30px;
+}
+
+.navegacion a {
+    font-weight: 700;
+    color: var(--color-text-dark);
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.contenedor {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 20px;
+    position: relative; 
+}
+
+
+/*Seccion de Rice bowl*/
+
+
+.arroz {
+    padding: 60px 0px 130px 0px;
+}
+
+.contenido-arroz {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.texto-arroz {
+    left: 200px;
+    position: relative;
+}
+
+.arroz-imagen {
+    position: relative;
+
+    right: 1px;
+}
+
+.arroz h1 {
+    font-size: 90px;
+    color: black;
+    line-height: 0.9;
+    margin-bottom: 10px;
+}
+
+.arroz h1 span {
+    display: block;
+    font-size: 50px;
+    font-weight: 400;
+    color: black;
+}
+
+.arroz p {
+    color: black;
+    margin-bottom: 30px;
+    max-width: 450px;
+}
+
+.texto-inf{
+    position: relative;
+    bottom: -270px;
+    right: 300px;
+    font-size: 20px;
+    color: black;   
+    
+}
+
+/* estilos de sobre nosotros*/
+
+.sobre-nosotros {
+    position: relative;
+    background-color: yellow
+}
