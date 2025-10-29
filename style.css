@@ -35,7 +35,7 @@ img {
 
 /*Estilos del header*/
 .header{
-    background-color: rgb(101, 226, 220);
+    background-color: rgb(219, 237, 247);
     position: relative;
 }
 
@@ -109,7 +109,7 @@ img {
 
 .arroz {
     padding: 60px 0px 130px 0px;
-    background-color: aqua;
+    background-color: rgb(219, 237, 247);
     position: relative;
 }
 
@@ -197,7 +197,7 @@ img {
 
 
 .our-menu{
-    /*background-color: rgb(188, 89, 255);*/
+    background-color: #7c6ce8;
     padding: 60px 0;
     
 }
