@@ -1,8 +1,14 @@
+
+:root {
+    --font-body: Arial, sans-serif;
+    --color-text-dark: #333;
+    --color-white: #ffffff;
+}
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
 }
 
 a {
@@ -29,11 +35,8 @@ img {
 
 /*Estilos del header*/
 .header{
-    background-color: rgb(180, 255, 253);
+    background-color: rgb(101, 226, 220);
     position: relative;
-    
-
-
 }
 
 .header-contenido{
@@ -43,14 +46,10 @@ img {
     padding-top: 20px;
     padding-bottom: 20px;
     position: relative;
-
-    
 }
 
 .logo img {
     max-width: 150px;
-
-
 }
 
 /*botones*/
@@ -63,12 +62,15 @@ img {
     border: none;
     cursor: pointer;
     font-size: 14px;
-
+    
+    background-color: #e67e22; 
+    color: white;
 }
 
 .btn-vermenu {
     background-color: red;
-    color: var(--color-white);
+    color: white;
+    margin-top: 20px;
 }
 
 .btn-calorias {
@@ -77,10 +79,11 @@ img {
     color: white;
     padding: 10px 20px;
     bottom: 10px;
-    left: 45%;
+    
+    
+    left: 50%;
+    transform: translateX(-50%);
 }
-
-
 
 /*Navegacion*/
 .navegacion ul {
@@ -102,29 +105,29 @@ img {
     position: relative; 
 }
 
-
 /*Seccion de Rice bowl*/
-
 
 .arroz {
     padding: 60px 0px 130px 0px;
+    background-color: aqua;
+    position: relative;
 }
 
 .contenido-arroz {
     display: flex;
     align-items: center;
     gap: 40px;
+    justify-content: center; 
 }
 
 .texto-arroz {
-    left: 200px;
-    position: relative;
+    font-family: Allura, cursive;
+    display: inline-block;
 }
 
 .arroz-imagen {
-    position: relative;
-
-    right: 1px;
+    display: flex;
+   
 }
 
 .arroz h1 {
@@ -148,17 +151,150 @@ img {
 }
 
 .texto-inf{
-    position: relative;
-    bottom: -270px;
-    right: 300px;
+    text-align: center;
     font-size: 20px;
     color: black;   
+    margin-top: 50px; 
+}
+
+/*about*/
+.about {
+    display: flex;
+    align-items: center;
+    gap: 40px; 
+}
+
+.about-imagen {
+    position: relative;
+    width: 450px;
+    height: 450px;
+    flex-shrink: 0;
+}
+
+
+
+
+.about-texto{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 70px;
+    margin-bottom: 100px;
+   
+}
+
+.about h3{
+    font-size: 40px;
+}
+
+.about h2{
+    font-size: 100px;
+    color: #7b7fd9;
+    font-style: italic;
+    margin-bottom: 5px;
+}
+
+
+
+.our-menu{
+    /*background-color: rgb(188, 89, 255);*/
+    padding: 60px 0;
     
 }
 
-/* estilos para sobre nosotros*/
+.our-menu-texto{
+    text-align: center;
+    color: white;
+}
 
-.sobre-nosotros {
+.our-menu-texto h2{
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.our-menu-texto p{
+    font-size: 12px;
+    max-width: 700px;
+    margin: 10px auto;
+}
+
+
+.our-menu-img{
+    margin-top: 20px;
+    color: white; 
+    
+    display: flex;
+    justify-content: center; 
+    gap: 30px; 
+    flex-wrap: wrap; 
+}
+
+.menu-item{
+    width: 300px; 
+    background-color: rgba(255, 255, 255, 0.1); 
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center; 
+    
+   
+}
+
+.menu-item img {
+    margin: 0 auto; 
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+
+.ready-to-started {
     position: relative;
-    background-color: yellow
+    background-color: rgb(93, 96, 196);
+    display:flex;
+}
+
+.ready-to-started-txt {
+    text-align: left;
+    margin-top: 20px;
+    margin-left: 50px;
+    
+}
+
+
+.ready-to-started h2 {
+    font-size: 50px;
+    margin-bottom: 20px;
+    color: white; 
+}
+
+.ready-to-started p {
+    font-size: 18px;
+    max-width: 700px;
+    color: white;
+}
+
+.formulario-email{
+    position: relative;
+    display: inline-block;
+}
+
+.formulario-email input[type="email"] {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 30px;
+    outline: none;
+    width: 300px;
+    font-size: 16px;
+    
+}
+
+.formulario-email button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    padding: 8px 0px;
+    cursor: pointer;
 }
