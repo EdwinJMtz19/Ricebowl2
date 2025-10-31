@@ -1,300 +1,348 @@
+ * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+        }
+        
+        /* Header */
+        header {
+            background-color: rgb(225, 220, 250);
+            padding: 20px 5%;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 60px;
+        }
+        
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+            color: #5b4db5;
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 30px;
+            list-style: none;
+        }
+        
+        .nav-links a {
+            text-decoration: none;
+            color: #333;
+            font-size: 14px;
+        }
+        
+        /* Primera Seccion */
+        .rice-bowl {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            padding: 40px 5%;
+            background-color: rgb(225, 220, 250);
+        }
+        
+        .rice-bowl-texto h1 {
+            font-size: 72px;
+            color: #7b6bc9;
+            font-style: italic;
+            margin-bottom: 10px;
+        }
+        
+        .rice-bowl-texto h2 {
+            font-size: 48px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        
+        .rice-bowl-texto p {
+            color: #666;
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+        
+        .btn-red {
+            background-color: #d84242;
+            color: white;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        
+        .rice-bowl-img {
+            position: relative;
+            display: flex;
+            justify-content: center;
+        }
+        
+        .bowl-img {
+            width: 450px;
+            height: 450px;
+            background: #ddd;
+            border-radius: 50%;
+        }
+        
+        /* Calories Section */
+        .calorias {
+            text-align: center;
+            padding: 40px 5%;
+        }
+        
+        .calorias h3 {
+            font-size: 18px;
+            color: #333;
+            margin-bottom: 20px;
+        }
 
-:root {
-    --font-body: Arial, sans-serif;
-    --color-text-dark: #333;
-    --color-white: #ffffff;
-}
+        .calorias-btn {
+            background-color: #7b6bc9;
+            color: white;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+        }
+        
+        /* About Section */
+        .about{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            padding: 80px 5%;
+            gap: 60px;
+        }
+        
+        .about-img {
+            display: flex;
+            justify-content: center;
+        }
+        
+        
+        
+        .about-texto h3 {
+            font-size: 18px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+        
+        .about-texto h2 {
+            font-size: 48px;
+            color: #7b6bc9;
+            font-style: italic;
+            margin-bottom: 20px;
+        }
+        
+        .about-texto p {
+            color: #666;
+            line-height: 1.8;
+            margin-bottom: 30px;
+        }
+        
+        /* Menu Section */
+        .menu {
+            background-color: #7b6bc9;
+            padding: 80px 5%;
+            text-align: center;
+            color: white;
+        }
+        
+        .menu h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
-ul {
-    list-style: none;
-}
-
-body {
-    font-family: var(--font-body);
-    font-size: 16px;
-    line-height: 1.6;
-    color: var(--color-text-dark);
-    background-color: var(--color-white);
-}
-
-img {
-    max-width: 100%;
-    display: block;
-}
-
-/*Estilos del header*/
-.header{
-    background-color: rgb(219, 237, 247);
-    position: relative;
-}
-
-.header-contenido{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    position: relative;
-}
-
-.logo img {
-    max-width: 150px;
-}
-
-/*botones*/
-.btn {
-    display: inline-block;
-    padding: 12px 25px;
-    border-radius: 25px;
-    font-weight: 700;
-    text-decoration: none;
-    border: none;
-    cursor: pointer;
-    font-size: 14px;
-    
-    background-color: #e67e22; 
-    color: white;
-}
-
-.btn-vermenu {
-    background-color: red;
-    color: white;
-    margin-top: 20px;
-}
-
-.btn-calorias {
-    position: absolute;
-    background-color: #7c6ce8;
-    color: white;
-    padding: 10px 20px;
-    bottom: -20px;
-    
-    
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-/*Navegacion*/
-.navegacion ul {
-    display: flex;
-    gap: 30px;
-}
-
-.navegacion a {
-    font-weight: 700;
-    color: var(--color-text-dark);
-    text-transform: uppercase;
-    font-size: 14px;
-}
-
-.contenedor {
-    max-width: 1140px;
-    margin: 0 auto;
-    padding: 0 20px;
-    position: relative; 
-}
-
-/*Seccion de Rice bowl*/
-
-.arroz {
-    padding: 60px 0px 130px 0px;
-    background-color: rgb(219, 237, 247);
-    position: relative;
-}
-
-.contenido-arroz {
-    display: flex;
-    align-items: center;
-    gap: 40px;
-    justify-content: center; 
-}
-
-.texto-arroz {
-    font-family: Allura, cursive;
-    display: inline-block;
-}
-
-.arroz-imagen {
-    display: flex;
-   
-}
-
-.arroz h1 {
-    font-size: 90px;
-    color: #7c6ce8;
-    line-height: 0.9;
-    margin-bottom: 10px;
-}
-
-.arroz h1 span {
-    display: block;
-    font-size: 50px;
-    font-weight: 400;
-    color: black;
-}
-
-.arroz p {
-    color: black;
-    margin-bottom: 30px;
-    max-width: 450px;
-}
-
-.texto-inf{
-    position: absolute;
-    text-align: center;
-    font-size: 30px;
-    color: black;   
-    margin-top: 50px;
-    margin-left: 36%;
-}
-
-/*about*/
-.about {
-    display: flex;
-    align-items: center;
-    gap: 40px; 
-}
-
-.about-imagen {
-    position: relative;
-    width: 450px;
-    height: 450px;
-    flex-shrink: 0;
-}
-
-
-
-
-.about-texto{
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    margin-top: 70px;
-    margin-bottom: 100px;
-   
-}
-
-.about h3{
-    font-size: 40px;
-}
-
-.about h2{
-    font-size: 100px;
-    color: #7b7fd9;
-    font-style: italic;
-    margin-bottom: 5px;
-}
-
-
-
-.our-menu{
-    background-color: #7c6ce8;
-    padding: 60px 0;
-    
-}
-
-.our-menu-texto{
-    text-align: center;
-    color: white;
-}
-
-.our-menu-texto h2{
-    font-size: 50px;
-    margin-bottom: 10px;
-}
-
-.our-menu-texto p{
-    font-size: 12px;
-    max-width: 700px;
-    margin: 10px auto;
-}
-
-
-.our-menu-img{
-    margin-top: 20px;
-    color: white; 
-    
-    display: flex;
-    justify-content: center; 
-    gap: 30px; 
-    flex-wrap: wrap; 
-}
-
-.menu-item{
-    width: 300px; 
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
-
-}
-
-.menu-item img {
-    margin: 0 auto; 
+        .menu p {
+            margin-bottom: 50px;
+        }
+        
+        .menu-items {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .menu-item {
+            text-align: center;
+        }
+        
+        .menu-item img{
+             margin: 0 auto; 
+             width:200px ;
+             height: 200px;
     margin-bottom: 15px;
     border-radius: 5px;
-}
+        }
+        
+        .menu-item h4 {
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+        
+        .precio{
+            font-size: 24px;
+            font-weight: bold;
+        }
+        
 
 
-.ready-to-started {
-    position: relative;
-    background-color: rgb(93, 96, 196);
-    display:flex;
-}
+        /* testimonio */
+        .testimonios {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            padding: 80px 5%;
+            gap: 60px;
+        }
+        
+        .testimonio-img {
+            width: 400px;
+            height: 400px;
+            background: #ddd;
+            border-radius: 50%;
+        }
+        
+        .testimonio-contenido h2 {
+            font-size: 36px;
+            color: #666;
+            margin-bottom: 30px;
+        }
+        
+        .testimonio-text {
+            color: #666;
+            line-height: 1.8;
+            margin-bottom: 30px;
+        }
+        
+        .testimonio-autor {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        .autor-img {
+            width: 50px;
+            height: 50px;
+            background: #ddd;
+            border-radius: 50%;
+        }
 
-.ready-to-started-txt {
-    text-align: left;
-    margin-top: 20px;
-    margin-left: 50px;
+        
+        
+        .autor-name {
+            font-weight: bold;
+            color: #333;
+        }
+        
+        .author-contacto {
+            color: #5bc9a8;
+            font-size: 14px;
+        }
+        
+        /* CTA Section */
+        .cta-section {
+            background-color: #5b4db5;
+            padding: 80px 5%;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            color: white;
+        }
+        
+        .cta-text h2 {
+            font-size: 36px;
+            margin-bottom: 15px;
+        }
+        
+        .cta-text p {
+            margin-bottom: 30px;
+        }
+
+        
+        .email-form {
+            display: flex;
+            gap: 10px;
+            background: white;
+            padding: 5px;
+            border-radius: 25px;
+            max-width: 500px;
+        }
+        
+        .email-form input {
+            flex: 1;
+            border: none;
+            padding: 10px 20px;
+            outline: none;
+        }
+        
+        .email-form button {
+            background-color: #5b4db5;
+            color: white;
+            border: none;
+            padding: 10px 25px;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+        
     
-}
-
-
-.ready-to-started h2 {
-    font-size: 50px;
-    margin-bottom: 20px;
-    color: white; 
-}
-
-.ready-to-started p {
-    font-size: 18px;
-    max-width: 700px;
-    color: white;
-}
-
-.formulario-email{
-    position: relative;
-    display: inline-block;
-}
-
-.formulario-email input[type="email"] {
-    padding: 12px 20px;
-    border: none;
-    border-radius: 30px;
-    outline: none;
-    width: 300px;
-    font-size: 16px;
-    
-}
-
-.formulario-email button {
-    position: absolute;
-    top: 5px;
-    right: 5px;
-    background-color: red;
-    color: white;
-    border: none;
-    border-radius: 30px;
-    padding: 8px 0px;
-    cursor: pointer;
-}
+        
+        /* Footer */
+        footer {
+            padding: 40px 5%;
+            background: #f9f9f9;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 40px;
+            margin-bottom: 30px;
+        }
+        
+        .footer-column h4 {
+            margin-bottom: 15px;
+            color: #333;
+        }
+        
+        .footer-column ul {
+            list-style: none;
+        }
+        
+        .footer-column a {
+            color: #666;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 8px;
+            font-size: 14px;
+        }
+        
+        .footer-bottom {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid #ddd;
+            color: #666;
+            font-size: 14px;
+        }
+        
+        @media (max-width: 768px) {
+            .hero, .about-section, .testimonial-section, .cta-section {
+                grid-template-columns: 1fr;
+            }
+            
+            .menu-items {
+                grid-template-columns: 1fr;
+            }
+            
+            .footer-content {
+                grid-template-columns: 1fr;
+            }
+        }
